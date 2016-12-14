@@ -4,10 +4,10 @@
 * Copyright (C) 2016 nebulaM
 * License: Apache 2.0
 * http://www.apache.org/licenses/LICENSE-2.0
-*  If you are currently taking CPEN 412 at UBC, be aware of academic dishonesty policy when use this code.
-/---------------------------------------------------------------------------
+* If you are currently taking CPEN 412 at UBC, be aware of academic dishonesty policy when use this code.
+/--------------------------------------------------------------------------------------------------------------
 Requirements taken from the project description file:	
-1. Functions to Read and write a Byte to the EEProm 				(fully work)
+1. Functions to Read and write a Byte to the EEProm 			(fully work)
 2. Functions to Read and write a Block of 128 bytes to EEProm 		(fully work)
 3. Functions to Read and write a block of any size up to 128K 
 bytes stating at any address in the EEProm chip.This require 
@@ -18,14 +18,14 @@ it as a single 128k byte device. In addition each
 64k block is split into multiple smaller blocks of 128 bytes so 
 new internal address will have to be written to the chip when passing 
 through a 128 byte boundary with the chip to avoid "wrap around" 
-	on a 128 byte or 64k byte boundary 								(works with ALL byte page R/W cases(start/end at any index) 
-																	and ALL single 64k block R/W cases(start/end any index from 
-																	any page, unexpected result on a test case when write over 
-																	64k boundary)
+on a 128 byte or 64k byte boundary 					(works with ALL byte page R/W cases(start/end at any index) 
+									and ALL single 64k block R/W cases(start/end any index from 
+									any page, unexpected result on a test case when write over 
+									64k boundary)
 4. Ability to generate a Waveform out of the DAC on the ADC/DAC 
-chip by writing continuous to it 									(fully work)
-5. Ability to read an analog input from one ADC channel 			(fully work)
-/---------------------------------------------------------------------------
+chip by writing continuous to it 					(fully work)
+5. Ability to read an analog input from one ADC channel 		(fully work)
+/-----------------------------------------------------------------------------------------------------------------------
 *1. Support sequential R/W for any number of location starting at any address
 *2. input the number of location in 6 digit HEX
    0X000000 means R/W ONE location, NOT ZERO location
